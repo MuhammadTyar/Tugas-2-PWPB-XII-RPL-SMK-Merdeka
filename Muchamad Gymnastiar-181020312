@@ -1,0 +1,50 @@
+# Tugas-2-PWPB-XII-RPL-SMK-Merdeka
+PWPB XII RPLMuchamad Gymnastiar
+
+<?php
+$buah = 'Apel';
+if ($buah == 'Semangka') {
+    echo 'Ini adalah buah ' . $buah . ', sangat segar!<br/>';
+} else if ($buah == 'Mangga') {
+    echo 'Ini adalah buah ' . $buah . ', sangat manis!<br/>';
+} else if ($buah == 'Pisang') {
+    echo 'Ini adalah buah ' . $buah . ', sehat sekali<br/>';
+} else {
+    echo 'Ini adalah buah ' . $buah . ' tetap makan buah ya!!';
+}
+
+switch ($buah) {
+    case 'Semangka':
+        echo 'Ini adalah buah ' . $buah . ', sangat segar!<br/>';
+        break;
+    case 'Mangga':
+        echo 'Ini adalah buah ' . $buah . ', sangat manis!<br/>';
+        break;
+    case 'Pisang':
+        echo 'Ini adalah buah ' . $buah . ', sehat sekali<br/>';
+        break;
+    default:
+        echo 'Ini adalah buah ' . $buah . ' tetap makan buah ya!!';
+}
+
+=========================================================================
+
+<?php
+$jbuah = 7;
+$keterangan = 'Jumlah buah yang dikonsumsi : ';
+switch (true) {
+    case ($jbuah >= 9):
+        $predikat = 'sangat baik <br/>';
+        break;
+    case ($jbuah < 9 && $jbuah >= 8):
+        $predikat = 'baik<br/>';
+        break;
+    case ($jbuah < 8 && $jbuah >=  6):
+        $predikat = 'cukup baik<br/>';
+    default:
+        $predikat = 'perlu ditingkatkan lagi';
+}
+echo $keterangan . $jbuah . $predikat;
+
+=========================================================================
+
